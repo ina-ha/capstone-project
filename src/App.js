@@ -1,6 +1,6 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import BookingPage from './components/BookingPage';
 import Homepage from './components/Homepage';
 import About from './components/About';
@@ -10,7 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Header />
        <Routes>
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/booking" element={<BookingPage />}></Route>

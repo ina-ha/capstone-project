@@ -2,12 +2,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Karla', sans-serif;
+  font-size: 16pt;
   color: #333333;
 }
 
 .App {
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
   }
 
 .content {
@@ -141,9 +142,10 @@ header ul li {
 }
 
 .card img {
-  width: 280px;
+  width: 290px;
   height: 180px;
-  
+  object-fit: cover;
+
 
 }
 
@@ -172,6 +174,9 @@ header ul li {
 
 .specials-order p {font-weight: 800;}
 
+.specials-order p:hover {color:#EE9972;
+cursor: pointer;}
+
 .specials p {
   color:#495E57;
   font-size: 16pt;
@@ -184,4 +189,50 @@ header ul li {
 .price {
   color:#EE9972;
   font-size: 16pt;
+}
+
+footer {margin-top: 90px;
+  background-color: #495E57;
+
+}
+
+.footer-layout {
+  padding: 50px 0;
+ 
+  
+  }
+
+  .footer-logo {
+    width: 75px;
+  }
+.footer-logo img {
+  width: 130px;
+}
+
+
+.doormat, footer ul li {
+  color: #EDEFEE;
+  text-decoration: none;
+  line-height: 1.5;
+  list-style: none;
+}
+
+.doormat:hover {
+  color:#EE9972;
+}
+
+footer h3 {
+  color: #EDEFEE;
+  padding-bottom: 1rem;
+  font-weight: 800;
+}
+
+.footer-icon {
+  fill: #EDEFEE;
+
+}
+
+.footer-icon:hover {
+  fill: #EE9972;
+
 }
