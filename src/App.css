@@ -11,7 +11,7 @@
   }
 
 .content {
-  width: 890px;
+  width: 930px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -36,9 +36,10 @@ header ul li {
 }
 .nav-link {
   
-  padding: 20px 20px;
+  padding: 20px 15px;
   border-radius: 16px;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 16pt;
   text-decoration: none;
 }
 
@@ -68,14 +69,14 @@ header ul li {
 .action h2 {
   font-size: 40pt;
   font-family: 'Markazi Text', serif;
-  color: #EDEEFF;
+  color: #EDEFEE;
   font-weight: 400;
   margin: 0 0 1rem 0;
 }
 
 .action h3 {
   font-family: 'Karla', serif;
-  color: #EDEEFF; 
+  color: #EDEFEE;
   font-size: 18pt;
   font-weight: 400;
 }
@@ -100,9 +101,9 @@ header ul li {
 .btn {
   margin-top: 1rem;
   background-color: #F4CE14;
-  width: 250px;
+  width: 230px;
   border-radius: 16px;
-  height: 2.5rem;
+  height: 3rem;
   box-shadow: none;
   border: none;
 }
@@ -113,6 +114,74 @@ header ul li {
 }
 .btn-link {
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 16pt;
+  font-weight: 800;
+}
+
+.specials {
+  margin-top: 90px;
+}
+
+.specials h1 {
+  font-size: 20pt;
+  font-weight: 800;
+  text-transform: uppercase;
+
+}
+
+
+
+.card {
+  margin-top: 60px;
+  width: 290px;
+  height: 590px;
+  background-color: #EDEFEE;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 280px;
+  height: 180px;
+  
+
+}
+
+.specials-text {
+  padding: 20px 20px 0 20px;
+
+
+}
+.specials-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specials-description {
+  height: 200px;
+  padding-top: 30px;
+
+}
+.specials-order {
+  padding-top: 80px;
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.specials-order p {font-weight: 800;}
+
+.specials p {
+  color:#495E57;
+  font-size: 16pt;
+}
+
+.specials h3 {
+  font-size: 18pt;
+  font-weight: 800;
+}
+.price {
+  color:#EE9972;
+  font-size: 16pt;
 }
