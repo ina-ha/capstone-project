@@ -1,14 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/Logo.svg';
 import Nav from './Nav';
+import { RiMenuFill } from 'react-icons/ri';
+import basket from "../assets/Basket.svg"
+
 
 
 function Header() {
-  return (<header className='content'>
-    <Link to='/'><img src={logo} alt='Little Lemon Logo'></img></Link>
-    <Nav class="nav-link" />
-    
+  const[clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked)
+  }
+
+
+
+  useEffect(() => {
+    const handler = (e) => setClicked(false);
+     document.getElementById('main').addEventListener('click', handler);
+   return () => {document.getElementById('main').removeEventListener('click', handler)}
+  });
+
+
+const handleLink = () => {
+setClicked(false)
+}
+
+  return (
+  <header>
+    <div className='content'>
+    <div><RiMenuFill onClick={handleClick} className="header-icon" size={52}/></div>
+    <div className='header-logo'><Link to='/'><img src={logo} alt='Little Lemon Logo'></img></Link></div>
+    <div className='header-icon'><img src={basket} /></div>
+    <Nav handleLink={handleLink} nav= {clicked? "active" : "inactive"} classNav="nav-link" />
+    </div>
     </header>
   )
 }

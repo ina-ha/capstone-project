@@ -4,10 +4,10 @@ import Specials from './Specials';
 
 function Homepage() {
   return (
-    <main>
+    <>
     <CallToAction />
     <Specials />
-    </main>
+    </>
   )
 }
 

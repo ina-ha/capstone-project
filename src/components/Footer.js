@@ -11,7 +11,7 @@ function Footer() {
     <footer>
       <div className='content footer-layout'>
         <div className='footer-logo'><img src={whitelogo} alt="Litle Lemon Logo"></img></div>
-        <div><Nav class='doormat' /></div>
+        <div><Nav classNav='doormat' /></div>
         <div>
           <ul><li><h3>Contact</h3></li>
           <li>Address</li>
@@ -23,7 +23,7 @@ function Footer() {
             <ul><li><h3>Opening hours</h3></li>
             <li>Tue - Fr: 3 p.m. - 11 p.m.</li>
             <li>Sat, Sun: 10 a.m. - 12 a.m.</li>
-            <li>Mon: day off</li></ul>
+            <li>Mon: Closed</li></ul>
           </div>
         <div><ul>
           <li><FaFacebook className='footer-icon'/></li>

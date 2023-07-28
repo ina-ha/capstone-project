@@ -1,19 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Nav(props) {
+function Nav (props) {
+
+ 
   return (
-    <nav>
-      <ul>
-        <li><Link className={props.class} to='/'>Home</Link></li>
-        <li><Link className={props.class} to='/about'>About</Link></li>
-        <li><Link className={props.class} to=''>Menu</Link></li>
-        <li><Link className={props.class} to='/booking'>Reservations</Link></li>
-        <li><Link className={props.class} to=''>Order online</Link></li>
-        <li><Link className={props.class} to=''>Login</Link></li>
-      </ul>
+    <nav className={props.nav} onClick={props.handleLink}>
+
+        <Link className={props.classNav} to='/'>Home</Link>
+        <Link className={props.classNav} to='/about'>About</Link>
+        <Link className={props.classNav} to=''>Menu</Link>
+        <Link className={props.classNav} to='/booking'>Reservations</Link>
+        <Link className={props.classNav} to=''>Order online</Link>
+        <Link className={props.classNav} to=''>Login</Link>
+
     </nav>
   )
 }
+
 
 export default Nav
