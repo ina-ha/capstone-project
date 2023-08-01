@@ -25,7 +25,7 @@ description: "This comes straight from grandma's recipe book, every last ingredi
     <h1>This week's specials!</h1>
     <button className='btn'>{<Link className='btn-link' to='/'>Online Menu</Link>}</button>
     </div>
-    <div className='content'>
+    <div className='content cards'>
     {dishes.map(dish => {return (<article className='card'>
        <img src={dish.image}/>
         <div className='specials-text'>

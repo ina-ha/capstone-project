@@ -17,10 +17,11 @@ function Header() {
 
 
   useEffect(() => {
+    if (clicked){
     const handler = (e) => setClicked(false);
      document.getElementById('main').addEventListener('click', handler);
    return () => {document.getElementById('main').removeEventListener('click', handler)}
-  });
+  }});
 
 
 const handleLink = () => {
@@ -30,9 +31,8 @@ setClicked(false)
   return (
   <header>
     <div className='content'>
-    <div><RiMenuFill onClick={handleClick} className="header-icon" size={52}/></div>
     <div className='header-logo'><Link to='/'><img src={logo} alt='Little Lemon Logo'></img></Link></div>
-    <div className='header-icon'><img src={basket} /></div>
+    <div><RiMenuFill onClick={handleClick} className="header-icon" size={52}/></div>
     <Nav handleLink={handleLink} nav= {clicked? "active" : "inactive"} classNav="nav-link" />
     </div>
     </header>
