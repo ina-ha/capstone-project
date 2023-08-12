@@ -123,7 +123,7 @@ header {
   justify-content: space-between;
 }
 
-.action-image, {
+.action-image {
   width: 40%;
   display: flex;
 
