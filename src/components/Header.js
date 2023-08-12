@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/Logo.svg';
 import Nav from './Nav';
 import { RiMenuFill } from 'react-icons/ri';
-import basket from "../assets/Basket.svg"
+
 
 
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import actionImage from '../assets/restauranfood.jpg';
 
-function CallToAction() {
+
+function CallToAction({heading, actionImage, buttonText, link, buttonDisplay, alt}) {
   return (
     <section className="action">
     <div className='content'>
@@ -13,11 +13,11 @@ function CallToAction() {
     </div>
     <div className='content'>
     <div className='action-text'>
-    <h3>We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist</h3>
-    <button className='btn'>{<Link className='btn-link' to='/booking'>Reserve a Table</Link>}</button>
+    <h3>{heading}</h3>
+    <Link className='btn-link' to={link}><button className='btn' style={buttonDisplay}>{buttonText}</button></Link>
     </div>
     <div className='action-image'>
-<img src={actionImage}></img>
+<img src={actionImage} alt={alt}></img>
     </div>
     </div>
     </section>

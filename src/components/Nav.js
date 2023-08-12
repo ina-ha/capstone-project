@@ -8,7 +8,7 @@ function Nav (props) {
     <nav className={props.nav} onClick={props.handleLink}>
 
         <Link className={props.classNav} to='/'>Home</Link>
-        <Link className={props.classNav} to='/about'>About</Link>
+        <Link className={props.classNav} to=''>About</Link>
         <Link className={props.classNav} to=''>Menu</Link>
         <Link className={props.classNav} to='/booking'>Reservations</Link>
         <Link className={props.classNav} to=''>Order online</Link>
