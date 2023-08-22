@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/capstone-project/static/css/main.7c334cfe.css",
+    "main.js": "/capstone-project/static/js/main.94d9047e.js",
+    "static/media/bruchetta.svg": "/capstone-project/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
+    "static/media/restaurant.jpg": "/capstone-project/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/greek salad.jpg": "/capstone-project/static/media/greek salad.e081fff41350770520aa.jpg",
+    "static/media/restaurant chef B.jpg": "/capstone-project/static/media/restaurant chef B.93486c06f1e394970f51.jpg",
+    "static/media/logo_white.png": "/capstone-project/static/media/logo_white.c4dc3bfe04256fdf26a7.png",
+    "static/media/restauranfood.jpg": "/capstone-project/static/media/restauranfood.ac2b1c0356b7bc310df8.jpg",
+    "static/media/Logo.svg": "/capstone-project/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "index.html": "/capstone-project/index.html",
+    "static/media/calendar-fill.svg": "/capstone-project/static/media/calendar-fill.47d3d00cf64b61020ab1.svg",
+    "static/media/dropdown.svg": "/capstone-project/static/media/dropdown.783aada98ba0fd9de19f.svg",
+    "main.7c334cfe.css.map": "/capstone-project/static/css/main.7c334cfe.css.map",
+    "main.94d9047e.js.map": "/capstone-project/static/js/main.94d9047e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c334cfe.css",
+    "static/js/main.94d9047e.js"
+  ]
+}
