@@ -7,6 +7,7 @@
   color: #333333;
 }
 
+/* Wrapper to align the content on the page */
 .content {
   width: 90%;
   margin: 0 auto;
@@ -16,6 +17,7 @@
   flex-wrap: wrap;
 }
 
+/* Header */
 header {
   height: 90px;
   display: flex;
@@ -27,16 +29,18 @@ header {
 
 }
 
-.header-icon, .form-icon {
+.header-icon,
+.form-icon {
   fill: #495E57;
 }
 
 .inactive {
+  /* Hides the navigation bar when the screen size is small */
   display: none;
 }
 
-
 .active {
+  /* Navigation bar is displazed when the menu icon is clicked */
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -65,6 +69,7 @@ header {
   color: #EDEEFF;
 }
 
+/* Call to Action section */
 .action {
   width: 100%;
   height: 400px;
@@ -81,7 +86,7 @@ header {
 }
 
 
-.action-image img  {
+.action-image img {
 
   height: 210px;
   border-radius: 16px;
@@ -109,7 +114,7 @@ header {
   padding-bottom: 25px;
 }
 
-.action h3, .banner h3 {
+.action h3 {
   color: #EDEFEE;
   font-size: 1.1rem;
   font-weight: 400;
@@ -129,6 +134,7 @@ header {
 
 }
 
+/* Button style */
 .btn {
   background-color: #F4CE14;
   width: 150px;
@@ -151,6 +157,12 @@ header {
 
 }
 
+.btn:disabled {
+  background-color: rgb(206, 204, 204);
+  color: grey;
+}
+
+/* Specials Section of the home page */
 .specials {
   margin-top: 35px;
 }
@@ -160,7 +172,8 @@ header {
   gap: 20px;
 }
 
-.specials h1, .booking h1 {
+.specials h1,
+.booking h1 {
   font-size: 20pt;
   font-weight: 800;
   text-transform: uppercase;
@@ -237,6 +250,7 @@ header {
   font-size: 16pt;
 }
 
+/* Footer */
 footer {
   margin-top: 35px;
   background-color: #495E57;
@@ -299,6 +313,34 @@ footer h3 {
   gap: 40px;
 }
 
+/* Form progress bar */
+.progress {
+  margin: 30px 0;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #495E57;
+  border-radius: 5px;
+}
+
+.selected,
+.notSelected {
+  width: 50%;
+  padding: 2px;
+  font-weight: 500;
+  font-size: 1rem;
+
+}
+
+.selected {
+  background-color: #495E57;
+  color: #EDEEFF;
+}
+
+.notSelected {
+  color: grey;
+}
+
 /* Styling the form */
 
 select {
@@ -313,87 +355,71 @@ select {
   background-position: calc(100% - 8px) center;
 }
 
-.select-time {width: 150px;}
+.select-time {
+  width: 150px;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 input[type=number] {
   -moz-appearance: textfield;
   text-align: center;
- border: none;
- margin: 0;
- width: 50px;
- font-weight: 600;
- font-size: 1.2rem;
+  border: none;
+  margin: 0;
+  width: 50px;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
+
 input[type=number]:focus {
   outline: none;
 }
 
 .form-icon {
-font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
-input, select {
+input,
+select {
   display: block;
   width: 270px;
   padding: 10px;
   border-radius: 5px;
-  fill:#495E57;
+  fill: #495E57;
   border: 1px solid #495E57;
   margin-top: 8px;
 }
 
-label {display: block;
-font-weight: 600;
-margin-top: 25px;}
-
-::-webkit-calendar-picker-indicator {background-image: url(./assets/calendar-fill.svg);}
-
-/* Form progress bar */
-.progress {margin: 30px 0;
-display: flex;
-width: 100%;
-text-align: center;
-border: 1px solid #495E57;
-border-radius: 5px;}
-
-.selected, .notSelected {
-  width: 50%;
-  padding: 2px;
-  font-weight: 500;
-  font-size: 1rem;
-  
-  }
-.selected {
-  background-color: #495E57;
-  color:#EDEEFF;
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 25px;
 }
 
-.notSelected {
-  color: grey;
+::-webkit-calendar-picker-indicator {
+  background-image: url(./assets/calendar-fill.svg);
 }
 
-
-.btn:disabled {background-color: rgb(206, 204, 204);
-color: grey;}
-
-.guests {display: flex;
-align-items: center;
-gap: 10px;
-height: 6rem;
+.guests {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 6rem;
 }
 
-.guests label {margin: 0;
-margin-right: 20px;}
+.guests label {
+  margin: 0;
+  margin-right: 20px;
+}
 
 .occasion {
   margin: 0;
   margin-bottom: 0.8rem;
-  }
+}
 
 .form-buttons {
   padding: 30px 0;
@@ -406,7 +432,7 @@ margin-right: 20px;}
 .booking .content {
   padding-top: 35px;
   height: auto;
-  }
+}
 
 .booking-text {
   width: 100%;
@@ -417,26 +443,43 @@ margin-right: 20px;}
   display: none;
 }
 
+/* Form validation errors */
+.invalid-input p {
+  font-size: 0.8rem;
+  color: red;
+}
 
-.invalid-input p {font-size: 0.8rem;
-  color: red;}
-.invalid-input {height: 0.8rem;}
+.invalid-input {
+  height: 0.8rem;
+}
 
-.invalid {border: 1px solid red;}
+.invalid {
+  border: 1px solid red;
+}
 
-.check-booking {margin-top: 40px;}
+.check-booking {
+  margin-top: 40px;
+}
 
-.confirmation {display: flex;
-flex-direction: column;
-gap: 50px;
-height: 500px;
-line-height: 1.5rem;}
 
-.bold {font-weight: 800}
+/* Confirmation page */
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 500px;
+  line-height: 1.5rem;
+}
+
+.bold {
+  font-weight: 800
+}
 
 .confirmation .btn {
   margin-top: 30px;
 }
+
+/* Adjustments for screen sizes */
 @media screen and (max-width: 374px) {
   .content {
     width: 95%;
@@ -446,7 +489,8 @@ line-height: 1.5rem;}
     font-size: 3rem;
   }
 
-  .specials h1, .booking h1 {
+  .specials h1,
+  .booking h1 {
     font-size: 1.3rem;
   }
 
@@ -494,20 +538,28 @@ line-height: 1.5rem;}
   label {
     margin-top: 50px;
   }
-  input, select {
+
+  input,
+  select {
     width: 300px;
   }
-.progress {
-  margin: 50px 0;
-}
-.booking .content {padding-top: 50px;
 
-}
-.guests {height: 8rem;}
+  .progress {
+    margin: 50px 0;
+  }
 
-.form-buttons {
-  padding: 60px 0;
-}
+  .booking .content {
+    padding-top: 50px;
+
+  }
+
+  .guests {
+    height: 8rem;
+  }
+
+  .form-buttons {
+    padding: 60px 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -528,16 +580,19 @@ line-height: 1.5rem;}
     width: 40%;
     display: block;
   }
+
   .booking-text {
     width: 60%;
   }
 }
 
 
-.booking-image img {height: 340px;
-width: 250px;
-object-fit: cover;
-border-radius: 16px;}
+.booking-image img {
+  height: 340px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+}
 
 @media screen and (min-width: 1024px) {
   .specials .content {
@@ -587,7 +642,9 @@ border-radius: 16px;}
 }
 
 @media screen and (min-width: 1440px) {
-  .action img, .booking-image img {
+
+  .action img,
+  .booking-image img {
     width: 330px;
   }
 
@@ -604,6 +661,7 @@ border-radius: 16px;}
   .cards {
     margin-top: 50px;
   }
+
   .progress {
     margin: 60px 0;
   }
@@ -618,4 +676,3 @@ border-radius: 16px;}
     max-width: 35%;
   }
 }
-

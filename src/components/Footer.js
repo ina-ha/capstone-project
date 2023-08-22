@@ -14,25 +14,25 @@ function Footer() {
         <div><Nav classNav='doormat' /></div>
         <div>
           <ul><li><h3>Contact</h3></li>
-          <li>7344 N Western Ave,</li>
-          <li>Chicago, IL 60611</li>
-          <li>Phone: 312-321-3210</li>
+            <li>7344 N Western Ave,</li>
+            <li>Chicago, IL 60611</li>
+            <li>Phone: 312-321-3210</li>
           </ul>
-          </div>
-          <div>
-            <ul><li><h3>Opening hours</h3></li>
+        </div>
+        <div>
+          <ul><li><h3>Opening hours</h3></li>
             <li>Tue - Fr: 3 p.m. - 11 p.m.</li>
             <li>Sat, Sun: 10 a.m. - 12 a.m.</li>
             <li>Mon: Closed</li>
             <li></li></ul>
-          </div>
         </div>
-        <div className="socials"><ul>
-          <li><FaFacebook className='footer-icon'/></li>
-          <li><FaInstagram className='footer-icon' /></li>
-          <li><FaPinterest className='footer-icon' /></li>
-          <li><FaYoutube className='footer-icon' /></li>
-          </ul></div>
+      </div>
+      <div className="socials"><ul>
+        <li><FaFacebook className='footer-icon' /></li>
+        <li><FaInstagram className='footer-icon' /></li>
+        <li><FaPinterest className='footer-icon' /></li>
+        <li><FaYoutube className='footer-icon' /></li>
+      </ul></div>
     </footer>
   )
 }

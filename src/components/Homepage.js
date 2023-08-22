@@ -10,8 +10,8 @@ function Homepage() {
   const alt = "Delicious looking dish"
   return (
     <>
-    <CallToAction heading={heading} actionImage={actionImage} buttonText={buttonText} link={link} alt={alt} />
-    <Specials />
+      <CallToAction heading={heading} actionImage={actionImage} buttonText={buttonText} link={link} alt={alt} />
+      <Specials />
     </>
   )
 }
