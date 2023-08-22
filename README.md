@@ -1,4 +1,4 @@
-** Little Lemon Restaurant **
+**Little Lemon Restaurant**
 
 This is my capstone project for Meta Front-End Developer Specialization on Coursera.
 A responsive website for a fictitious client (Little Lemon Restaurant) created using React.
